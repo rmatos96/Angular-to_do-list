@@ -1,0 +1,31 @@
+.card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+    height: 500px;
+    width: 400px;
+
+    overflow: auto;
+}
+
+.dentro{
+    background: rgb(231, 231, 231);
+    height: 30px;
+    margin-right: 10px;
+    font-size: 17px;
+    padding-left: 10px;
+    padding-right: 10px;
+    min-width: 230px;
+}
+
+.butao3{
+    display: inline;
+}
+
+.input{
+    height: 39px;
+    width: 300px;
+
+    margin-right: 10px;
+}

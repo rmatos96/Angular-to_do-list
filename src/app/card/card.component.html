@@ -1,0 +1,24 @@
+<mat-card class="card">
+    <mat-card-title class="h2">
+        <h2>To Do App</h2>
+    </mat-card-title>
+    
+    <mat-card-content>
+        <input matInput placeholder="Adicione o seu a fazer" class="input" #inputValor (keyup.enter)="add(inputValor.value)">
+        <button directiva mat-flat-button color="primary" (click)="add(inputValor.value)">+</button>
+        <mat-list>
+            <mat-list-item  *ngFor="let tarefa of tarefas">
+                <p class="dentro">{{tarefa}}</p>
+                <button diretiva2 mat-raised-button color="warn" (click)="remover(inputValor.value)">Limpar</button>
+            </mat-list-item>
+        </mat-list>
+    </mat-card-content>
+    <mat-card-footer>
+        <mat-list>
+            <mat-list-item>
+            <p class="dentro"> Você tem {{numero}} tarefas a fazer</p>
+            <button diretiva3 mat-raised-button color="warn" (click)="removeall()">Limpar Todas</button>
+            </mat-list-item>
+        </mat-list>
+    </mat-card-footer>	
+</mat-card>
